@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="300" id="KGk-i7-Jjw" customClass="TableViewCell" customModule="TestApiYoutube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="309"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="308.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" image="xe" translatesAutoresizingMaskIntoConstraints="NO" id="1co-Ud-GGw">
+                        <rect key="frame" x="0.0" y="0.0" width="397" height="180"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="180" id="3xG-pa-Ct6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="omething About Super Mario World ANIMATED (Loud Sound Warning) 🍄" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqz-iR-713">
+                        <rect key="frame" x="6" y="186" width="385" height="85.5"/>
+                        <fontDescription key="fontDescription" name="MyanmarSangamMN-Bold" family="Myanmar Sangam MN" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVh-Yb-yMR">
+                        <rect key="frame" x="6" y="271.5" width="385" height="22"/>
+                        <fontDescription key="fontDescription" name="MyanmarSangamMN" family="Myanmar Sangam MN" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="kqz-iR-713" secondAttribute="trailing" constant="6" id="7YX-ra-fmo"/>
+                    <constraint firstItem="YVh-Yb-yMR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="TU5-ye-Jcq"/>
+                    <constraint firstItem="1co-Ud-GGw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WY2-VG-fsI"/>
+                    <constraint firstItem="YVh-Yb-yMR" firstAttribute="top" secondItem="kqz-iR-713" secondAttribute="bottom" id="c8Z-Nf-vRQ"/>
+                    <constraint firstAttribute="trailing" secondItem="YVh-Yb-yMR" secondAttribute="trailing" constant="6" id="exp-UW-GgI"/>
+                    <constraint firstItem="kqz-iR-713" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="6" id="hUK-Gr-W8H"/>
+                    <constraint firstItem="kqz-iR-713" firstAttribute="top" secondItem="1co-Ud-GGw" secondAttribute="bottom" constant="6" id="kjL-tY-wCG"/>
+                    <constraint firstAttribute="trailing" secondItem="1co-Ud-GGw" secondAttribute="trailing" id="oGi-me-Ygk"/>
+                    <constraint firstItem="1co-Ud-GGw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="q6T-ce-RLN"/>
+                    <constraint firstAttribute="bottom" secondItem="YVh-Yb-yMR" secondAttribute="bottom" constant="15" id="xN0-UZ-2Zl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.070588235294117646" green="0.070588235294117646" blue="0.070588235294117646" alpha="1" colorSpace="calibratedRGB"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imvThumb" destination="1co-Ud-GGw" id="Yom-Xn-Qkc"/>
+                <outlet property="infoLabel" destination="YVh-Yb-yMR" id="2sA-Sb-Gk5"/>
+                <outlet property="titleLabel" destination="kqz-iR-713" id="paU-Ve-ZsX"/>
+            </connections>
+            <point key="canvasLocation" x="42.753623188405797" y="145.64732142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="xe" width="480" height="270"/>
+    </resources>
+</document>

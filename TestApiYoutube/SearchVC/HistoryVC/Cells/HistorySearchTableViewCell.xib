@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="HistorySearchTableViewCell" customModule="TestApiYoutube" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="253" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H9S-4U-DcL">
+                        <rect key="frame" x="0.0" y="0.0" width="253" height="44.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Si-rH-nRY">
+                                <rect key="frame" x="8" y="10" width="24.5" height="24.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="24.5" id="1ut-jd-j5B"/>
+                                    <constraint firstAttribute="width" secondItem="7Si-rH-nRY" secondAttribute="height" multiplier="1:1" id="5Er-CV-UlV"/>
+                                </constraints>
+                                <state key="normal" image="history-clock-button"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-QY-Oeh">
+                                <rect key="frame" x="40.5" y="13.5" width="168" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="usa-Jh-X6r">
+                                <rect key="frame" x="218.5" y="10" width="24.5" height="24.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="usa-Jh-X6r" secondAttribute="height" multiplier="1:1" id="U9c-E4-Zom"/>
+                                </constraints>
+                                <state key="normal" image="push-pin"/>
+                                <connections>
+                                    <action selector="buttonActionPush:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zAa-v8-kAK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="usa-Jh-X6r" firstAttribute="centerY" secondItem="H9S-4U-DcL" secondAttribute="centerY" id="Aq8-5k-TdQ"/>
+                            <constraint firstAttribute="trailing" secondItem="usa-Jh-X6r" secondAttribute="trailing" constant="10" id="Dd2-4k-lTA"/>
+                            <constraint firstItem="OeC-QY-Oeh" firstAttribute="leading" secondItem="7Si-rH-nRY" secondAttribute="trailing" constant="8" id="KHV-A8-qzM"/>
+                            <constraint firstItem="7Si-rH-nRY" firstAttribute="leading" secondItem="H9S-4U-DcL" secondAttribute="leading" constant="8" id="T3g-Gu-WVY"/>
+                            <constraint firstItem="usa-Jh-X6r" firstAttribute="width" secondItem="7Si-rH-nRY" secondAttribute="width" id="cT6-W7-97F"/>
+                            <constraint firstItem="7Si-rH-nRY" firstAttribute="centerY" secondItem="H9S-4U-DcL" secondAttribute="centerY" id="jKj-AN-JNl"/>
+                            <constraint firstItem="usa-Jh-X6r" firstAttribute="leading" secondItem="OeC-QY-Oeh" secondAttribute="trailing" constant="10" id="rZn-sB-GZq"/>
+                            <constraint firstItem="OeC-QY-Oeh" firstAttribute="centerY" secondItem="H9S-4U-DcL" secondAttribute="centerY" id="v5f-5C-ffP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                <constraints>
+                    <constraint firstItem="H9S-4U-DcL" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="9Y7-ce-xbT"/>
+                    <constraint firstAttribute="trailing" secondItem="H9S-4U-DcL" secondAttribute="trailing" id="L9z-kt-jVq"/>
+                    <constraint firstItem="H9S-4U-DcL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="qhi-FH-vMs"/>
+                    <constraint firstAttribute="bottom" secondItem="H9S-4U-DcL" secondAttribute="bottom" constant="10" id="thj-kw-c3E"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelHistory" destination="OeC-QY-Oeh" id="meV-nC-TEw"/>
+            </connections>
+            <point key="canvasLocation" x="89.130434782608702" y="115.51339285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="history-clock-button" width="16" height="16"/>
+        <image name="push-pin" width="16" height="16"/>
+    </resources>
+</document>
